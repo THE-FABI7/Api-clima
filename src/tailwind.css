@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: url("/data/fondo4jpg") no-repeat center center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+span {
+  @apply  text-fondoinfo text-xl;
+}
+
+form {
+  @apply shadow-md rounded px-8 pt-6 pb-8 mb-4 grid grid-cols-2 gap-2;
+}
+
+label {
+  @apply block text-letras text-sm font-bold mb-2;
+}
+
+select {
+  @apply block appearance-none w-full bg-fondolabel border border-gray-200 text-letras py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500;
+}
+
+section {
+  @apply flex flex-col h-screen bg-primary backdrop-blur-md  text-fondoinfo text-lg  text-center items-center font-serif rounded-lg p-4 opacity-100;
+}

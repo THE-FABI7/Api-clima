@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/tailwind.css" />
+    <script defer type="module" src="./resources/js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <title>FabiClima</title>
+  </head>
+
+  <body>
+    <main class="p-3 font-serif">
+      <form action="#" id="app-form" class="grid grid-cols-1 sm:grid-cols-2">
+        <label for="countries" class="mb-1">
+          <span class="mb-2">Países</span>
+          <select name="countries" class="..." id="countries"></select>
+        </label>
+
+        <label for="cities" class="mb-1">
+          <span class="mb-2">Ciudades</span>
+          <select name="cities" class="..." id="cities"></select>
+        </label>
+      </form>
+
+      <script>
+        setInterval(() => {
+          let date = new Date();
+          let clock = document.getElementById("clock");
+          clock.innerHTML =
+            date.getHours() +
+            ":" +
+            date.getMinutes() +
+            ":" +
+            date.getSeconds();
+        }, 1000);
+      </script>
+
+      <div class="p-5 w-full sm:w-1/2 md:w-1/3 sm:mx-auto">
+        <div id="clock" class="p-5 w-full sm:w-1/2 md:w-1/3 sm:mx-auto text-white"></div>
+        <section id="weather-info" class="">Información del clima</section>
+      </div>
+
+      <div id="map" class="h-52"></div>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+  </body>
+</html>
