@@ -1,4 +1,4 @@
 ##Api-clima
-##ap de clima actualizado y con mapa
+##app de clima actualizado y con mapa
 
 
